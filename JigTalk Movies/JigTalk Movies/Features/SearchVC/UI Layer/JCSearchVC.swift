@@ -8,10 +8,10 @@
 
 import UIKit
 
-protocol SearchViewProtocol: class {
+protocol JCSearchViewProtocol: class {
 }
 
-class SearchVC: UIViewController {
+class JCSearchVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,6 @@ class SearchVC: UIViewController {
 }
 
 // MARK: - Implement SearchViewProtocol
-extension SearchVC: SearchViewProtocol {
+extension JCSearchVC: JCSearchViewProtocol {
     
 }

@@ -13,9 +13,11 @@
 		C4C8603723D8E60300D4F5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C8603623D8E60300D4F5C1 /* Assets.xcassets */; };
 		C4C8603A23D8E60300D4F5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C8603823D8E60300D4F5C1 /* LaunchScreen.storyboard */; };
 		C4C8604523D8E60300D4F5C1 /* JigTalk_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8604423D8E60300D4F5C1 /* JigTalk_MoviesTests.swift */; };
-		C4C8605823D8E6AC00D4F5C1 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605723D8E6AC00D4F5C1 /* SearchVC.swift */; };
-		C4C8605A23D8E70100D4F5C1 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605923D8E70100D4F5C1 /* SearchInteractor.swift */; };
-		C4C8605D23D8E74500D4F5C1 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605C23D8E74500D4F5C1 /* SearchService.swift */; };
+		C4C8605823D8E6AC00D4F5C1 /* JCSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605723D8E6AC00D4F5C1 /* JCSearchVC.swift */; };
+		C4C8605A23D8E70100D4F5C1 /* JCSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605923D8E70100D4F5C1 /* JCSearchInteractor.swift */; };
+		C4C8605D23D8E74500D4F5C1 /* JCSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605C23D8E74500D4F5C1 /* JCSearchService.swift */; };
+		C4C8606023D8E88500D4F5C1 /* JCSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605F23D8E88500D4F5C1 /* JCSearchResult.swift */; };
+		C4C8606223D8EA1200D4F5C1 /* JCNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8606123D8EA1200D4F5C1 /* JCNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,11 @@
 		C4C8604023D8E60300D4F5C1 /* JigTalk MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JigTalk MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C8604423D8E60300D4F5C1 /* JigTalk_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JigTalk_MoviesTests.swift; sourceTree = "<group>"; };
 		C4C8604623D8E60300D4F5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4C8605723D8E6AC00D4F5C1 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
-		C4C8605923D8E70100D4F5C1 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
-		C4C8605C23D8E74500D4F5C1 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		C4C8605723D8E6AC00D4F5C1 /* JCSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSearchVC.swift; sourceTree = "<group>"; };
+		C4C8605923D8E70100D4F5C1 /* JCSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSearchInteractor.swift; sourceTree = "<group>"; };
+		C4C8605C23D8E74500D4F5C1 /* JCSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSearchService.swift; sourceTree = "<group>"; };
+		C4C8605F23D8E88500D4F5C1 /* JCSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSearchResult.swift; sourceTree = "<group>"; };
+		C4C8606123D8EA1200D4F5C1 /* JCNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +119,9 @@
 		C4C8605023D8E64800D4F5C1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C4C8605E23D8E86600D4F5C1 /* Models */,
 				C4C8605B23D8E73100D4F5C1 /* Services */,
+				C4C8606123D8EA1200D4F5C1 /* JCNetworkManager.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -132,7 +138,7 @@
 		C4C8605423D8E68A00D4F5C1 /* UI Layer */ = {
 			isa = PBXGroup;
 			children = (
-				C4C8605723D8E6AC00D4F5C1 /* SearchVC.swift */,
+				C4C8605723D8E6AC00D4F5C1 /* JCSearchVC.swift */,
 			);
 			path = "UI Layer";
 			sourceTree = "<group>";
@@ -140,7 +146,7 @@
 		C4C8605523D8E68F00D4F5C1 /* Business Layer */ = {
 			isa = PBXGroup;
 			children = (
-				C4C8605923D8E70100D4F5C1 /* SearchInteractor.swift */,
+				C4C8605923D8E70100D4F5C1 /* JCSearchInteractor.swift */,
 			);
 			path = "Business Layer";
 			sourceTree = "<group>";
@@ -148,9 +154,17 @@
 		C4C8605B23D8E73100D4F5C1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C4C8605C23D8E74500D4F5C1 /* SearchService.swift */,
+				C4C8605C23D8E74500D4F5C1 /* JCSearchService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C4C8605E23D8E86600D4F5C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4C8605F23D8E88500D4F5C1 /* JCSearchResult.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4C8605823D8E6AC00D4F5C1 /* SearchVC.swift in Sources */,
+				C4C8606023D8E88500D4F5C1 /* JCSearchResult.swift in Sources */,
+				C4C8605823D8E6AC00D4F5C1 /* JCSearchVC.swift in Sources */,
 				C4C8602E23D8E60100D4F5C1 /* AppDelegate.swift in Sources */,
-				C4C8605D23D8E74500D4F5C1 /* SearchService.swift in Sources */,
-				C4C8605A23D8E70100D4F5C1 /* SearchInteractor.swift in Sources */,
+				C4C8605D23D8E74500D4F5C1 /* JCSearchService.swift in Sources */,
+				C4C8605A23D8E70100D4F5C1 /* JCSearchInteractor.swift in Sources */,
+				C4C8606223D8EA1200D4F5C1 /* JCNetworkManager.swift in Sources */,
 				C4C8603023D8E60100D4F5C1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
