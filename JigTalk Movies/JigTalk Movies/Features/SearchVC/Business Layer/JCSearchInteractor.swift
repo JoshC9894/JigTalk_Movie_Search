@@ -9,6 +9,7 @@
 import Foundation
 
 protocol JCSearchInteractorProtocol {
+    func search(query: String)
 }
 
 class JCSearchInteractor: JCSearchInteractorProtocol {
@@ -21,4 +22,15 @@ class JCSearchInteractor: JCSearchInteractorProtocol {
     }
     
     // MARK: - Protocol Methods
+    func search(query: String) {
+        searchService.search(query: query) { (response) in
+            switch response {
+            case .success(let models):
+                debugPrint("@DEBUG: \(models)")
+                
+            case .failed(let error):
+                debugPrint("@Error: \(error)")
+            }
+        }
+    }
 }

@@ -60,5 +60,10 @@
 	</array>
 	<key>apiKey</key>
 	<string>d78c85be</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

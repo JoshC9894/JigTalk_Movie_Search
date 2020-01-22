@@ -9,19 +9,19 @@
 import Foundation
 
 protocol JCSearchServiceProtocol {
-    func search(query: String, completion: @escaping (JCServerResponse<[JCSearchResult]>) -> Void)
+    func search(query: String, completion: @escaping (JCServerResponse<JCSearchResult>) -> Void)
 }
 
 class JCSearchService: JCSearchServiceProtocol {
     static let shared: JCSearchServiceProtocol = JCSearchService()
     private let networkManager: JCNetworkManager = JCNetworkManager.shared
     
-    func search(query: String, completion: @escaping (JCServerResponse<[JCSearchResult]>) -> Void) {
+    func search(query: String, completion: @escaping (JCServerResponse<JCSearchResult>) -> Void) {
         let url = JCEndpoint.searchBy(title: query).path
         networkManager.request(url: url, type: .get) { (response) in
             switch response {
             case .success(let data):
-                guard let models = try? JSONDecoder().decode([JCSearchResult].self, from: data) else {
+                guard let models = try? JSONDecoder().decode(JCSearchResult.self, from: data) else {
                     completion(JCServerResponse.failed(JCServerError())); return
                 }
                 completion(JCServerResponse.success(models))
@@ -53,6 +53,6 @@ extension JCEndpoint {
 
 extension JCEndpoint {
     static func searchBy(title: String) -> JCEndpoint {
-        return JCEndpoint(endpoint: "t=\(title)")
+        return JCEndpoint(endpoint: "s=\(title)&page=1")
     }
 }

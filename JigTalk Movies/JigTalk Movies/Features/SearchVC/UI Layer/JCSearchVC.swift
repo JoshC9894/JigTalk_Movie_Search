@@ -12,9 +12,15 @@ protocol JCSearchViewProtocol: class {
 }
 
 class JCSearchVC: UIViewController {
+    
+    lazy var interactor: JCSearchInteractorProtocol = {
+        let interactor = JCSearchInteractor(view: self)
+        return interactor
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor.search(query: "batman")
     }
 }
 
