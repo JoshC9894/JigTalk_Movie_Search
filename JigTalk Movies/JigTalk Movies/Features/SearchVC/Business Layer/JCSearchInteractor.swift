@@ -26,10 +26,14 @@ class JCSearchInteractor: JCSearchInteractorProtocol {
         searchService.search(query: query) { (response) in
             switch response {
             case .success(let models):
-                debugPrint("@DEBUG: \(models)")
+                DispatchQueue.main.async {
+                    self.view?.displayResults(models)
+                }
                 
             case .failed(let error):
-                debugPrint("@Error: \(error)")
+                DispatchQueue.main.async {
+                    self.view?.displayError(error)
+                }
             }
         }
     }

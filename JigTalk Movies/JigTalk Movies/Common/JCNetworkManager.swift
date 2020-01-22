@@ -14,17 +14,17 @@ enum JCServerResponse<T> {
     case failed(JCServerError)
 }
 
-struct JCServerError {
-    var message: String
+struct JCServerError: Codable {
+    var Error: String
 }
 
 extension JCServerError {
     init(error: Error) {
-        self.message = error.localizedDescription
+        self.Error = error.localizedDescription
     }
     
-    init() {
-        self.message = "Oops... An error occurred!"
+    init(message: String = "Oops... An error occurred!") {
+        self.Error = message
     }
 }
 

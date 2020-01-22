@@ -14,14 +14,70 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search....." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="DCl-3T-vsK">
+                                <rect key="frame" x="32" y="331" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjH-SN-bVG">
+                                <rect key="frame" x="109" y="108" width="196" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJ7-nc-Gjr">
+                                <rect key="frame" x="124.5" y="397" width="165" height="46"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="Jut-Lu-gLM"/>
+                                    <constraint firstAttribute="width" constant="165" id="PAU-RN-iRL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="DQj-PS-Mcx">
+                                <rect key="frame" x="197" y="410" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkw-QU-4ZS">
+                                <rect key="frame" x="32" y="305" width="350" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Nkw-QU-4ZS" firstAttribute="leading" secondItem="DCl-3T-vsK" secondAttribute="leading" id="2Ko-hP-3JU"/>
+                            <constraint firstItem="DCl-3T-vsK" firstAttribute="top" secondItem="Nkw-QU-4ZS" secondAttribute="bottom" constant="26" id="A78-82-xsj"/>
+                            <constraint firstItem="RJ7-nc-Gjr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AHX-ua-taU"/>
+                            <constraint firstItem="DCl-3T-vsK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="C59-bE-2oh"/>
+                            <constraint firstItem="RJ7-nc-Gjr" firstAttribute="top" secondItem="DCl-3T-vsK" secondAttribute="bottom" constant="32" id="Dks-Yk-XMd"/>
+                            <constraint firstItem="DCl-3T-vsK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="G6E-05-b2M"/>
+                            <constraint firstItem="DQj-PS-Mcx" firstAttribute="centerX" secondItem="RJ7-nc-Gjr" secondAttribute="centerX" id="Kqv-XH-DUM"/>
+                            <constraint firstItem="Nkw-QU-4ZS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WWK-Mg-ibi"/>
+                            <constraint firstItem="FjH-SN-bVG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="fvm-AG-pGy"/>
+                            <constraint firstItem="Nkw-QU-4ZS" firstAttribute="trailing" secondItem="DCl-3T-vsK" secondAttribute="trailing" id="hfc-w1-Wg7"/>
+                            <constraint firstItem="FjH-SN-bVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofC-3n-k6G"/>
+                            <constraint firstItem="DQj-PS-Mcx" firstAttribute="centerY" secondItem="RJ7-nc-Gjr" secondAttribute="centerY" id="pay-Dh-la6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DCl-3T-vsK" secondAttribute="trailing" constant="32" id="wFG-z5-1kz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search" id="yrX-Kx-5eP"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="DQj-PS-Mcx" id="aqq-ih-xjM"/>
+                        <outlet property="errorLabel" destination="Nkw-QU-4ZS" id="IEI-nC-6FA"/>
+                        <outlet property="searchButton" destination="RJ7-nc-Gjr" id="xwY-Pr-DQv"/>
+                        <outlet property="searchField" destination="DCl-3T-vsK" id="7ge-AE-hBU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="872" y="127"/>
+            <point key="canvasLocation" x="1781.1594202898552" y="126.5625"/>
         </scene>
     </scenes>
 </document>

@@ -8,19 +8,13 @@
 
 import Foundation
 
+struct JCSearchResultDTO: Codable {
+    var Search: [JCSearchResult]
+}
+
 struct JCSearchResult: Codable {
     var Title: String
     var Year: String
-    var Released: String
-    var Genre: String
-    var Director: String
-    var Actors: String
-    var Plot: String
     var Poster: String
-    var Ratings: [JCSearchResultRating]
-}
-
-struct JCSearchResultRating: Codable {
-    var Source: String
-    var Value: String
+    var imdbID: String
 }
