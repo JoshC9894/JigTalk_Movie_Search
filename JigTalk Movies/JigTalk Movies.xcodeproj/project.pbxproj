@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A42E238F539749DDCA452BE0 /* Pods_JigTalk_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21488BF7810CCDCA794F0636 /* Pods_JigTalk_Movies.framework */; };
+		C4055ABD23DA2BF300036862 /* ResultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4055ABC23DA2BF300036862 /* ResultsTests.swift */; };
 		C45E281823D9062A0096CE72 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E281723D9062A0096CE72 /* SearchTests.swift */; };
 		C45E281D23DA0EE60096CE72 /* JCResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E281C23DA0EE60096CE72 /* JCResultsVC.swift */; };
 		C45E282423DA140C0096CE72 /* JCResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E282223DA140C0096CE72 /* JCResultCell.swift */; };
@@ -41,6 +42,7 @@
 		36E82BE8318EDF587350AB81 /* Pods-JigTalk MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigTalk MoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-JigTalk MoviesTests/Pods-JigTalk MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8176022C9FA60F8EC01C216C /* Pods-JigTalk Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigTalk Movies.release.xcconfig"; path = "Target Support Files/Pods-JigTalk Movies/Pods-JigTalk Movies.release.xcconfig"; sourceTree = "<group>"; };
 		A9D7E682ED33A78A484C9FD2 /* Pods-JigTalk Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigTalk Movies.debug.xcconfig"; path = "Target Support Files/Pods-JigTalk Movies/Pods-JigTalk Movies.debug.xcconfig"; sourceTree = "<group>"; };
+		C4055ABC23DA2BF300036862 /* ResultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTests.swift; sourceTree = "<group>"; };
 		C45E281723D9062A0096CE72 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
 		C45E281C23DA0EE60096CE72 /* JCResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCResultsVC.swift; sourceTree = "<group>"; };
 		C45E282223DA140C0096CE72 /* JCResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCResultCell.swift; sourceTree = "<group>"; };
@@ -99,8 +101,15 @@
 				36E82BE8318EDF587350AB81 /* Pods-JigTalk MoviesTests.debug.xcconfig */,
 				1377B1BD974A98C1788F9F20 /* Pods-JigTalk MoviesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4055ABB23DA2BD900036862 /* Results Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C4055ABC23DA2BF300036862 /* ResultsTests.swift */,
+			);
+			path = "Results Tests";
 			sourceTree = "<group>";
 		};
 		C45E281623D906070096CE72 /* Search Tests */ = {
@@ -167,6 +176,7 @@
 		C4C8604323D8E60300D4F5C1 /* JigTalk MoviesTests */ = {
 			isa = PBXGroup;
 			children = (
+				C4055ABB23DA2BD900036862 /* Results Tests */,
 				C45E281623D906070096CE72 /* Search Tests */,
 				C4C8604623D8E60300D4F5C1 /* Info.plist */,
 			);
@@ -418,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4055ABD23DA2BF300036862 /* ResultsTests.swift in Sources */,
 				C45E281823D9062A0096CE72 /* SearchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
