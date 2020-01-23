@@ -15,6 +15,7 @@ protocol JCSearchInteractorProtocol {
 class JCSearchInteractor: JCSearchInteractorProtocol {
     weak var view: JCSearchViewProtocol?
     var searchService: JCSearchServiceProtocol
+    var queue: DispatchQueue = .main
     
     init(view: JCSearchViewProtocol) {
         self.view = view
@@ -26,12 +27,12 @@ class JCSearchInteractor: JCSearchInteractorProtocol {
         searchService.search(query: query) { (response) in
             switch response {
             case .success(let models):
-                DispatchQueue.main.async {
+                self.queue.async {
                     self.view?.displayResults(models)
                 }
                 
             case .failed(let error):
-                DispatchQueue.main.async {
+                self.queue.async {
                     self.view?.displayError(error)
                 }
             }

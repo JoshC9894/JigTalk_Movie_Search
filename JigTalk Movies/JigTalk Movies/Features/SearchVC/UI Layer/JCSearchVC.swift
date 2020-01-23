@@ -24,7 +24,7 @@ class JCSearchVC: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var errorLabel: UILabel!
     
-    private var state: JCScreenState! {
+    var state: JCScreenState! {
         didSet { setState(state) }
     }
     
@@ -49,7 +49,7 @@ class JCSearchVC: UIViewController {
         self.view.addGestureRecognizer(tap)
     }
     
-    private func setState(_ state: JCScreenState) {
+    func setState(_ state: JCScreenState) {
         switch state {
         case .display:
             searchButton.isHidden = false
