@@ -1,0 +1,6 @@
+framework module Pods_JigTalk_Movies {
+  umbrella header "Pods-JigTalk Movies-umbrella.h"
+
+  export *
+  module * { export * }
+}

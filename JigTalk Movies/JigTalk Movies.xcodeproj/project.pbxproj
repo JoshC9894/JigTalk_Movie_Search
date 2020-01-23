@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A42E238F539749DDCA452BE0 /* Pods_JigTalk_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21488BF7810CCDCA794F0636 /* Pods_JigTalk_Movies.framework */; };
 		C45E281823D9062A0096CE72 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E281723D9062A0096CE72 /* SearchTests.swift */; };
 		C45E281D23DA0EE60096CE72 /* JCResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E281C23DA0EE60096CE72 /* JCResultsVC.swift */; };
 		C45E282423DA140C0096CE72 /* JCResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E282223DA140C0096CE72 /* JCResultCell.swift */; };
@@ -21,6 +22,7 @@
 		C4C8605D23D8E74500D4F5C1 /* JCSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605C23D8E74500D4F5C1 /* JCSearchService.swift */; };
 		C4C8606023D8E88500D4F5C1 /* JCSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8605F23D8E88500D4F5C1 /* JCSearchResult.swift */; };
 		C4C8606223D8EA1200D4F5C1 /* JCNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8606123D8EA1200D4F5C1 /* JCNetworkManager.swift */; };
+		F845DBC018113621ADB79887 /* Pods_JigTalk_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB78328753910431B13544F /* Pods_JigTalk_MoviesTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1377B1BD974A98C1788F9F20 /* Pods-JigTalk MoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigTalk MoviesTests.release.xcconfig"; path = "Target Support Files/Pods-JigTalk MoviesTests/Pods-JigTalk MoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		21488BF7810CCDCA794F0636 /* Pods_JigTalk_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JigTalk_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36E82BE8318EDF587350AB81 /* Pods-JigTalk MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigTalk MoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-JigTalk MoviesTests/Pods-JigTalk MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8176022C9FA60F8EC01C216C /* Pods-JigTalk Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigTalk Movies.release.xcconfig"; path = "Target Support Files/Pods-JigTalk Movies/Pods-JigTalk Movies.release.xcconfig"; sourceTree = "<group>"; };
+		A9D7E682ED33A78A484C9FD2 /* Pods-JigTalk Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigTalk Movies.debug.xcconfig"; path = "Target Support Files/Pods-JigTalk Movies/Pods-JigTalk Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		C45E281723D9062A0096CE72 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
 		C45E281C23DA0EE60096CE72 /* JCResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCResultsVC.swift; sourceTree = "<group>"; };
 		C45E282223DA140C0096CE72 /* JCResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCResultCell.swift; sourceTree = "<group>"; };
@@ -52,6 +59,7 @@
 		C4C8605C23D8E74500D4F5C1 /* JCSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSearchService.swift; sourceTree = "<group>"; };
 		C4C8605F23D8E88500D4F5C1 /* JCSearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCSearchResult.swift; sourceTree = "<group>"; };
 		C4C8606123D8EA1200D4F5C1 /* JCNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCNetworkManager.swift; sourceTree = "<group>"; };
+		CAB78328753910431B13544F /* Pods_JigTalk_MoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JigTalk_MoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42E238F539749DDCA452BE0 /* Pods_JigTalk_Movies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +75,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F845DBC018113621ADB79887 /* Pods_JigTalk_MoviesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BD64A1D4E0255FD9E30984B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21488BF7810CCDCA794F0636 /* Pods_JigTalk_Movies.framework */,
+				CAB78328753910431B13544F /* Pods_JigTalk_MoviesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4003FA311BB11C4832BA54F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9D7E682ED33A78A484C9FD2 /* Pods-JigTalk Movies.debug.xcconfig */,
+				8176022C9FA60F8EC01C216C /* Pods-JigTalk Movies.release.xcconfig */,
+				36E82BE8318EDF587350AB81 /* Pods-JigTalk MoviesTests.debug.xcconfig */,
+				1377B1BD974A98C1788F9F20 /* Pods-JigTalk MoviesTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C45E281623D906070096CE72 /* Search Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +135,8 @@
 				C4C8602C23D8E60100D4F5C1 /* JigTalk Movies */,
 				C4C8604323D8E60300D4F5C1 /* JigTalk MoviesTests */,
 				C4C8602B23D8E60100D4F5C1 /* Products */,
+				C4003FA311BB11C4832BA54F /* Pods */,
+				0BD64A1D4E0255FD9E30984B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -207,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4C8604923D8E60300D4F5C1 /* Build configuration list for PBXNativeTarget "JigTalk Movies" */;
 			buildPhases = (
+				D4FD2239C192D904112DB791 /* [CP] Check Pods Manifest.lock */,
 				C4C8602623D8E60100D4F5C1 /* Sources */,
 				C4C8602723D8E60100D4F5C1 /* Frameworks */,
 				C4C8602823D8E60100D4F5C1 /* Resources */,
+				F6C0DA4BE59C71C71AF1480A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4C8604C23D8E60300D4F5C1 /* Build configuration list for PBXNativeTarget "JigTalk MoviesTests" */;
 			buildPhases = (
+				E8FDDAC8BC25F221B285A8A5 /* [CP] Check Pods Manifest.lock */,
 				C4C8603C23D8E60300D4F5C1 /* Sources */,
 				C4C8603D23D8E60300D4F5C1 /* Frameworks */,
 				C4C8603E23D8E60300D4F5C1 /* Resources */,
@@ -296,6 +332,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4FD2239C192D904112DB791 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JigTalk Movies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FDDAC8BC25F221B285A8A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JigTalk MoviesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6C0DA4BE59C71C71AF1480A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JigTalk Movies/Pods-JigTalk Movies-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JigTalk Movies/Pods-JigTalk Movies-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JigTalk Movies/Pods-JigTalk Movies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C4C8602623D8E60100D4F5C1 /* Sources */ = {
@@ -468,6 +568,7 @@
 		};
 		C4C8604A23D8E60300D4F5C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D7E682ED33A78A484C9FD2 /* Pods-JigTalk Movies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -487,6 +588,7 @@
 		};
 		C4C8604B23D8E60300D4F5C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8176022C9FA60F8EC01C216C /* Pods-JigTalk Movies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -506,6 +608,7 @@
 		};
 		C4C8604D23D8E60300D4F5C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36E82BE8318EDF587350AB81 /* Pods-JigTalk MoviesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +631,7 @@
 		};
 		C4C8604E23D8E60300D4F5C1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1377B1BD974A98C1788F9F20 /* Pods-JigTalk MoviesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
