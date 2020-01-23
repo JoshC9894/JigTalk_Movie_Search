@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C45E281823D9062A0096CE72 /* SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E281723D9062A0096CE72 /* SearchTests.swift */; };
+		C45E281D23DA0EE60096CE72 /* JCResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E281C23DA0EE60096CE72 /* JCResultsVC.swift */; };
+		C45E282423DA140C0096CE72 /* JCResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45E282223DA140C0096CE72 /* JCResultCell.swift */; };
+		C45E282523DA140C0096CE72 /* JCResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C45E282323DA140C0096CE72 /* JCResultCell.xib */; };
 		C4C8602E23D8E60100D4F5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8602D23D8E60100D4F5C1 /* AppDelegate.swift */; };
 		C4C8603023D8E60100D4F5C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8602F23D8E60100D4F5C1 /* SceneDelegate.swift */; };
 		C4C8603523D8E60100D4F5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4C8603323D8E60100D4F5C1 /* Main.storyboard */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		C45E281723D9062A0096CE72 /* SearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTests.swift; sourceTree = "<group>"; };
+		C45E281C23DA0EE60096CE72 /* JCResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCResultsVC.swift; sourceTree = "<group>"; };
+		C45E282223DA140C0096CE72 /* JCResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JCResultCell.swift; sourceTree = "<group>"; };
+		C45E282323DA140C0096CE72 /* JCResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JCResultCell.xib; sourceTree = "<group>"; };
 		C4C8602A23D8E60100D4F5C1 /* JigTalk Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JigTalk Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C8602D23D8E60100D4F5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C8602F23D8E60100D4F5C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +78,24 @@
 				C45E281723D9062A0096CE72 /* SearchTests.swift */,
 			);
 			path = "Search Tests";
+			sourceTree = "<group>";
+		};
+		C45E281923DA0EBA0096CE72 /* ResultsVC */ = {
+			isa = PBXGroup;
+			children = (
+				C45E281A23DA0EC40096CE72 /* UI Layer */,
+			);
+			path = ResultsVC;
+			sourceTree = "<group>";
+		};
+		C45E281A23DA0EC40096CE72 /* UI Layer */ = {
+			isa = PBXGroup;
+			children = (
+				C45E281C23DA0EE60096CE72 /* JCResultsVC.swift */,
+				C45E282223DA140C0096CE72 /* JCResultCell.swift */,
+				C45E282323DA140C0096CE72 /* JCResultCell.xib */,
+			);
+			path = "UI Layer";
 			sourceTree = "<group>";
 		};
 		C4C8602123D8E60100D4F5C1 = {
@@ -119,6 +143,7 @@
 		C4C8604F23D8E64000D4F5C1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C45E281923DA0EBA0096CE72 /* ResultsVC */,
 				C4C8605123D8E65300D4F5C1 /* SearchVC */,
 			);
 			path = Features;
@@ -257,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4C8603A23D8E60300D4F5C1 /* LaunchScreen.storyboard in Resources */,
+				C45E282523DA140C0096CE72 /* JCResultCell.xib in Resources */,
 				C4C8603723D8E60300D4F5C1 /* Assets.xcassets in Resources */,
 				C4C8603523D8E60100D4F5C1 /* Main.storyboard in Resources */,
 			);
@@ -276,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C45E282423DA140C0096CE72 /* JCResultCell.swift in Sources */,
 				C4C8606023D8E88500D4F5C1 /* JCSearchResult.swift in Sources */,
 				C4C8605823D8E6AC00D4F5C1 /* JCSearchVC.swift in Sources */,
 				C4C8602E23D8E60100D4F5C1 /* AppDelegate.swift in Sources */,
 				C4C8605D23D8E74500D4F5C1 /* JCSearchService.swift in Sources */,
+				C45E281D23DA0EE60096CE72 /* JCResultsVC.swift in Sources */,
 				C4C8605A23D8E70100D4F5C1 /* JCSearchInteractor.swift in Sources */,
 				C4C8606223D8EA1200D4F5C1 /* JCNetworkManager.swift in Sources */,
 				C4C8603023D8E60100D4F5C1 /* SceneDelegate.swift in Sources */,

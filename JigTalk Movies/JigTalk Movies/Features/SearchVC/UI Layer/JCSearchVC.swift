@@ -47,6 +47,9 @@ class JCSearchVC: UIViewController {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tap)
+        
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
     }
     
     func setState(_ state: JCScreenState) {
@@ -96,6 +99,10 @@ class JCSearchVC: UIViewController {
 extension JCSearchVC: JCSearchViewProtocol {
     func displayResults(_ results: [JCSearchResult]) {
         setState(.display)
+        if let vc = storyboard?.instantiateViewController(identifier: "JCResultsVC") as? JCResultsVC {
+            vc.results = results
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func displayError(_ error: JCServerError) {
