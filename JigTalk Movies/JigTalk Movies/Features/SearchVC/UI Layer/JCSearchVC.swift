@@ -65,7 +65,7 @@ class JCSearchVC: UIViewController {
         case .error:
             searchButton.isHidden = false
             searchButton.isEnabled = true
-            searchButton.alpha = 1.0
+            searchButton.alpha = searchField.text != "" ? 1.0 : 0.45
             activityIndicator.isHidden = true
             activityIndicator.stopAnimating()
             errorLabel.isHidden = false
