@@ -16,7 +16,6 @@ class JCResultsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         collectionView.register(UINib(nibName: "JCResultCell", bundle: nil), forCellWithReuseIdentifier: "JCResultCell")
     }
 }
@@ -34,5 +33,13 @@ extension JCResultsVC: UICollectionViewDelegate, UICollectionViewDataSource {
         }
         cell.bindData(results[indexPath.row])
         return cell
+    }
+}
+
+// MARK: - CollectionView Flow
+extension JCResultsVC: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.width / 2.0,
+                      height: (collectionView.bounds.width))
     }
 }

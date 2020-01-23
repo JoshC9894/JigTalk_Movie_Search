@@ -101,6 +101,9 @@ extension JCSearchVC: JCSearchViewProtocol {
         setState(.display)
         if let vc = storyboard?.instantiateViewController(identifier: "JCResultsVC") as? JCResultsVC {
             vc.results = results
+            if let query = searchField.text {
+                vc.title = query.capitalized
+            }
             navigationController?.pushViewController(vc, animated: true)
         }
     }
